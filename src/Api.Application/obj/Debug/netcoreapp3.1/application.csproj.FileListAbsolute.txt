@@ -62,6 +62,10 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\ne
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.csproj.CopyComplete
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\application.StaticWebAssets.xml
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.csproj.AssemblyReference.cache
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.GeneratedMSBuildEditorConfig.editorconfig

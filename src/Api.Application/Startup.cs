@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace application
 {
@@ -27,6 +28,16 @@ namespace application
         {
             ConfigureService.ConfigureDependenciesService(services);
             ConfigureRepository.ConfigureDependenciesRepository(services);
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "SoFálta.eu Contatos",
+                    Description = "Lista de usuários para qualidade de atendimento ao cliente",
+                    TermsOfService = new Uri("https://sofalta.eu/privacy")
+                });
+            });
             services.AddControllers();
         }
 
@@ -37,6 +48,13 @@ namespace application
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "SoFálta.eu Contatos");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseRouting();
 
