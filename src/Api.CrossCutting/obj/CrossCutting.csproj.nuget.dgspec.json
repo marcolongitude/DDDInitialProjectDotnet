@@ -275,10 +275,6 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.0.0, )"
-            },
-            "System.IdentityModel.Tokens.Jwt": {
-              "target": "Package",
-              "version": "[5.5.0, )"
             }
           },
           "imports": [
