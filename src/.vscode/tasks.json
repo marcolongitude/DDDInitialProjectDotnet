@@ -36,6 +36,24 @@
                 "${workspaceFolder}/Api.Data.Test/Api.Data.Test.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Data.Testes",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/Api.Data.Test/Api.Data.Test.csproj",
+            ]
+        },
+        {
+            "label": "Service.Testes",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/Api.Service.Test/Api.Service.Test.csproj",
+            ]
         }
     ]
 }

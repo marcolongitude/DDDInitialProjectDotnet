@@ -12,5 +12,4 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Data\obj\Debug\netcoreap
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Data\obj\Debug\netcoreapp3.1\Data.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache

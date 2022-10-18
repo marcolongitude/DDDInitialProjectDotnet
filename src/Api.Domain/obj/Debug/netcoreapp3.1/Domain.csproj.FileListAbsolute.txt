@@ -6,5 +6,4 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Domain\obj\Debug\netcore
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.pdb
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache

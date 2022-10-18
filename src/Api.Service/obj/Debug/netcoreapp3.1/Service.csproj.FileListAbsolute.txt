@@ -11,5 +11,4 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcor
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.pdb
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.AssemblyReference.cache
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
