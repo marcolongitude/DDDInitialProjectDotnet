@@ -7,9 +7,9 @@ namespace Api.Data.Context
     {
         public MyContext CreateDbContext(string[] args)
         {
-            var connectionString = "Server=localhost;Database=sfe_contatos;Uid=root;Pwd=Adminmagti*1981";
-            var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
-            optionsBuilder.UseMySql(connectionString);
+            var sqlServerConnectionString = "Server=127.0.0.1,1433;Initial Catalog=dbSFEContatos;MultipleActiveResultSets=true; User Id=sa;Password=Adminmagti*1981";
+            var optionsBuilder = new DbContextOptionsBuilder<MyContext>();          
+            optionsBuilder.UseSqlServer(sqlServerConnectionString);
             return new MyContext(optionsBuilder.Options);
         }
     }
