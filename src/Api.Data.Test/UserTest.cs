@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Api.Data.Context;
 using Api.Domain.Entities;
@@ -29,17 +30,32 @@ namespace Api.Data.Test
                 Name = Faker.Name.FullName(),
             };
 
-            var result = await _repository.InsertAsync(_entity);
-            Assert.NotNull(result);
-            Assert.Equal(_entity.Email, result.Email);
-            Assert.Equal(_entity.Name, result.Name);
-            Assert.False(result.Id == Guid.Empty);
+            var createUser = await _repository.InsertAsync(_entity);
+            Assert.NotNull(createUser);
+            Assert.Equal(_entity.Email, createUser.Email);
+            Assert.Equal(_entity.Name, createUser.Name);
+            Assert.False(createUser.Id == Guid.Empty);
 
             _entity.Name = Faker.Name.First();
-            var updatedResult = await _repository.UpdateAsync(_entity);
-            Assert.NotNull(updatedResult);
-            Assert.Equal(_entity.Email, updatedResult.Email);
-            Assert.Equal(_entity.Name, updatedResult.Name);
+            var updateUser = await _repository.UpdateAsync(_entity);
+            Assert.NotNull(updateUser);
+            Assert.Equal(_entity.Email, updateUser.Email);
+            Assert.Equal(_entity.Name, updateUser.Name);
+
+            var existsUser = await _repository.ExistAsync(updateUser.Id);
+            Assert.True(existsUser);
+
+            var selectedUser = await _repository.SelectAsync(updateUser.Id);
+            Assert.NotNull(selectedUser);
+            Assert.Equal(updateUser.Email, updateUser.Email);
+            Assert.Equal(updateUser.Name, updateUser.Name);
+
+            var allUsers = await _repository.SelectAsync();
+            Assert.NotNull(allUsers);
+            Assert.True(allUsers.Count() > 0);
+
+            var removeUser = await _repository.DeleteAsync(updateUser.Id);
+            Assert.True(removeUser);
 
         }
     }
