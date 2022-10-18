@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {}
+    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
+    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\obj\\",
+        "outputPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

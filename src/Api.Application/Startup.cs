@@ -134,16 +134,14 @@ namespace application
                 endpoints.MapControllers();
             });
 
-            if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower())
+            var applicationMigrationStartup = Configuration.GetSection("env:MIGRATION");
+
+            if (applicationMigrationStartup.ToString().ToLower() == "APLICAR".ToString().ToLower())
             {
-                using (var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
-                    .CreateScope())
-                {
-                    using (var context = service.ServiceProvider.GetService<MyContext>())
-                    {
-                        context.Database.Migrate();
-                    }
-                }
+                using var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
+                    .CreateScope();
+                using var context = service.ServiceProvider.GetService<MyContext>();
+                context.Database.Migrate();
             }
         }
     }
