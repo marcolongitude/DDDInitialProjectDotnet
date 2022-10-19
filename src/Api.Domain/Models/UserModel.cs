@@ -25,18 +25,18 @@ namespace Domain.Models
             set { _email = value; }
         }
 
-        private DateTime _createdAt;
-        public DateTime CreatedAt
+        private DateTime _createAt;
+        public DateTime CreateAt
         {
-            get { return _createdAt; }
-            set { _createdAt = value == null ? DateTime.UtcNow : value; }
+            get { return _createAt; }
+            set { _createAt = value == null ? DateTime.UtcNow : value; }
         }
 
-        private DateTime _updatedAt;
-        public DateTime UpdatedAt
+        private DateTime _updateAt;
+        public DateTime UpdateAt
         {
-            get { return _updatedAt; }
-            set { _updatedAt = value; }
+            get { return _updateAt; }
+            set { _updateAt = value; }
         }
 
 
