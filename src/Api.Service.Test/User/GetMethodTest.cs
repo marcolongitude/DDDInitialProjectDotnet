@@ -7,13 +7,13 @@ using Xunit;
 
 namespace Api.Service.Test.User
 {
-    public class UserGet : UserTests
+    public class GetMethodTest : UserTests
     {
         private IUserService _service;
         private Mock<IUserService> _serviceMock;
 
         [Fact(DisplayName = "User Get")]
-        public async Task TestUserGet()
+        public async Task GetMethodTestUnity()
         {
             _serviceMock = new Mock<IUserService>();
             _serviceMock.Setup(m => m.Get(UserId)).ReturnsAsync(userDto);
