@@ -64,7 +64,6 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\ne
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Service.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\CrossCutting.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Data.pdb
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.csproj.AssemblyReference.cache
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.AssemblyInfoInputs.cache
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.AssemblyInfo.cs
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.csproj.CoreCompileInputs.cache
@@ -77,3 +76,4 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\ne
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.genruntimeconfig.cache
+c:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.csprojAssemblyReference.cache
