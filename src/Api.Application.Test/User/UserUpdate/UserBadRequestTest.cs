@@ -42,6 +42,7 @@ namespace Api.Application.Test.User.UserUpdate
 
             var result = await _controller.Put(userDtoUpdate);
             Assert.True(result is BadRequestObjectResult);
+            Assert.False(_controller.ModelState.IsValid);
 
         }
     }
