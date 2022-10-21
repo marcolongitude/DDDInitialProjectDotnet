@@ -95,7 +95,7 @@ namespace Service.Services
                 authenticated = true,
                 created = createDate.ToString("yyyy-MM-dd HH:mm:ss"),
                 expiration = expirationDate.ToString("yyyy-MM-dd HH:mm:ss"),
-                acessToken = token,
+                accessToken = token,
                 userEmail = user.Email,
                 userName = user.Name,
                 message = "Usuário logado com sucesso",

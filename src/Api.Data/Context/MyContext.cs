@@ -9,8 +9,10 @@ namespace Api.Data.Context
     {
         public DbSet<UserEntity> Users { get; set; }
 
-        public MyContext(DbContextOptions<MyContext> options) : base(options) { }
+        public MyContext(DbContextOptions<MyContext> options) : base(options)
+        {
 
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -26,6 +28,8 @@ namespace Api.Data.Context
                     UpdateAt = DateTime.Now,
                 }
             );
+
         }
+
     }
 }

@@ -34,9 +34,10 @@ namespace application
         {
             if (_enviroment.IsEnvironment("Testing"))
             {
+                string dataBaseName = "dbIntegrationTest";
                 Environment.SetEnvironmentVariable(
-                    "DB_CONNECTION",
-                    "Persist Security Info=True;Server=127.0.0.1,1433;Initial Catalog=dbAPI_Integration;MultipleActiveResultSets=true; User Id=sa;Password=Adminmagti*1981"
+                    "DB_CONNECTION_SQLSERVER",
+                    $"Server=127.0.0.1,1433;Initial Catalog={dataBaseName};MultipleActiveResultSets=true; User Id=sa;Password=Adminmagti*1981"
                 );
                 Environment.SetEnvironmentVariable("DATABASE", "SQLSERVER");
                 Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
@@ -61,12 +62,6 @@ namespace application
             var signingConfigurations = new SigningConfigurations();
             services.AddSingleton(signingConfigurations);
 
-            var tokenConfigurations = new TokenConfigurations();
-            new ConfigureFromConfigurationOptions<TokenConfigurations>(
-                Configuration.GetSection("TokenConfigurations"))
-                .Configure(tokenConfigurations);
-            services.AddSingleton(tokenConfigurations);
-
             services.AddAuthentication(authOptions =>
             {
                 authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -75,8 +70,8 @@ namespace application
             {
                 var paramsValidation = bearerOptions.TokenValidationParameters;
                 paramsValidation.IssuerSigningKey = signingConfigurations.Key;
-                paramsValidation.ValidAudience = tokenConfigurations.Audience;
-                paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
+                paramsValidation.ValidAudience = Environment.GetEnvironmentVariable("Audience");
+                paramsValidation.ValidIssuer = Environment.GetEnvironmentVariable("Issuer");
                 paramsValidation.ValidateIssuerSigningKey = true;
                 paramsValidation.ValidateLifetime = true;
                 paramsValidation.ClockSkew = TimeSpan.Zero;
@@ -149,14 +144,18 @@ namespace application
                 endpoints.MapControllers();
             });
 
-            var applicationMigrationStartup = Configuration.GetSection("env:MIGRATION");
+            var applicationMigrationStartup = Environment.GetEnvironmentVariable("MIGRATION");
 
-            if (applicationMigrationStartup.ToString().ToLower() == "APLICAR".ToString().ToLower())
+            if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower())
             {
-                using var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
-                    .CreateScope();
-                using var context = service.ServiceProvider.GetService<MyContext>();
-                context.Database.Migrate();
+                using (var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
+                                                            .CreateScope())
+                {
+                    using (var context = service.ServiceProvider.GetService<MyContext>())
+                    {
+                        context.Database.Migrate();
+                    }
+                }
             }
         }
     }
