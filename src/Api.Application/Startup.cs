@@ -34,7 +34,7 @@ namespace application
         {
             if (_enviroment.IsEnvironment("Testing"))
             {
-                string dataBaseName = "dbIntegrationTest";
+                string dataBaseName = "dbIntegration1";
                 Environment.SetEnvironmentVariable(
                     "DB_CONNECTION_SQLSERVER",
                     $"Server=127.0.0.1,1433;Initial Catalog={dataBaseName};MultipleActiveResultSets=true; User Id=sa;Password=Adminmagti*1981"
@@ -146,7 +146,7 @@ namespace application
 
             var applicationMigrationStartup = Environment.GetEnvironmentVariable("MIGRATION");
 
-            if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower())
+            if (applicationMigrationStartup.ToLower() == "APLICAR".ToLower())
             {
                 using (var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
                                                             .CreateScope())

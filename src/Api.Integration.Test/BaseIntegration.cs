@@ -73,7 +73,7 @@ namespace Api.Integration.Test
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.AddProfile(new ModelToEntityProfile());
+                cfg.AddProfile(new DtoToModelProfile());
                 cfg.AddProfile(new EntityToDtoProfile());
                 cfg.AddProfile(new ModelToEntityProfile());
             });
