@@ -28,8 +28,6 @@ namespace Api.Data.Context
                     UpdateAt = DateTime.Now,
                 }
             );
-
         }
-
     }
 }

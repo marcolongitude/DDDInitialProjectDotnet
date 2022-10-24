@@ -36,10 +36,10 @@ namespace application
             {
                 string dataBaseName = "dbIntegration1";
                 Environment.SetEnvironmentVariable(
-                    "DB_CONNECTION_SQLSERVER",
-                    $"Server=127.0.0.1,1433;Initial Catalog={dataBaseName};MultipleActiveResultSets=true; User Id=sa;Password=Adminmagti*1981"
+                    "DB_CONNECTION_MYSQL",
+                    $"Server=localhost;Database={dataBaseName};Uid=root;Pwd=Adminmagti*1981"
                 );
-                Environment.SetEnvironmentVariable("DATABASE", "SQLSERVER");
+                Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
                 Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
                 Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
                 Environment.SetEnvironmentVariable("Issuer", "ExemploIssuer");
