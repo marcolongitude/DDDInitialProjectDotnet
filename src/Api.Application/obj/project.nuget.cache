@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1Wjx/IbGorwwAxqqqNFol6f4oRZSNaxMmNCJDe7EohT3si7KTNvL6t1YRXfK81eEARwKlZY0L+HxVFFvyqkF/Q==",
+  "dgSpecHash": "CZ8v2QH4Je3ZpyAqfT+YTmUlveyQKIApKmQHn5YSDQ82pIGnpoY+z11ZZKvk5eh/+wVjmkGULnaLBWyVbsgkzg==",
   "success": true,
   "projectFilePath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/application.csproj",
   "expectedPackageFiles": [
@@ -109,7 +109,8 @@
     "/home/marco/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/home/marco/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/home/marco/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "/home/marco/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "/home/marco/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "/home/marco/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.29/microsoft.netcore.app.host.linux-x64.3.1.29.nupkg.sha512"
   ],
   "logs": []
 }

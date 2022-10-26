@@ -19,10 +19,10 @@ c:/Users/marco/Documents/myprojects/sfecontatos/src/Api.Service/obj/Debug/netcor
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/bin/Debug/netcoreapp3.1/Domain.dll
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/bin/Debug/netcoreapp3.1/Domain.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/bin/Debug/netcoreapp3.1/Data.pdb
-/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/Debug/netcoreapp3.1/Service.csprojAssemblyReference.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/Debug/netcoreapp3.1/Service.AssemblyInfoInputs.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/Debug/netcoreapp3.1/Service.AssemblyInfo.cs
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/Debug/netcoreapp3.1/Service.csproj.CoreCompileInputs.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/Debug/netcoreapp3.1/Service.csproj.CopyComplete
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/Debug/netcoreapp3.1/Service.dll
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/Debug/netcoreapp3.1/Service.pdb
+/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/Debug/netcoreapp3.1/Service.csprojAssemblyReference.cache

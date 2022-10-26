@@ -15,7 +15,7 @@ namespace Data.Implementations
             _dataset = context.Set<UserEntity>();
         }
 
-        public async Task<UserEntity> FindByLogin(string email)
+        public async Task<UserEntity> FindByLogin(string email, string password)
         {
             return await _dataset.FirstOrDefaultAsync(u => u.Email.Equals(email));
         }

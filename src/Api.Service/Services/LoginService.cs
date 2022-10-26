@@ -33,7 +33,7 @@ namespace Service.Services
 
         public async Task<object> FindByLogin(LoginDto user)
         {
-            if (string.IsNullOrWhiteSpace(user.Email))
+            if (string.IsNullOrWhiteSpace(user.Email) || string.IsNullOrEmpty(user.Password))
             {
                 return new
                 {
@@ -42,9 +42,9 @@ namespace Service.Services
                 };
             };
 
-            var baseUser = new UserEntity();
+            UserEntity baseUser = new UserEntity();
 
-            baseUser = await _repository.FindByLogin(user.Email);
+            baseUser = await _repository.FindByLogin(user.Email, user.Password);
             if (baseUser == null)
             {
                 return new
@@ -53,7 +53,7 @@ namespace Service.Services
                     message = "Falha ao atenticar"
                 };
             }
-            else
+            else if(baseUser.Password == user.Password)
             {
                 ClaimsIdentity identity = new ClaimsIdentity(
                     new GenericIdentity(baseUser.Email),
@@ -65,11 +65,19 @@ namespace Service.Services
                 );
 
                 DateTime createDate = DateTime.Now;
-                DateTime expirationDate = createDate + TimeSpan.FromSeconds(Convert.ToInt32(Environment.GetEnvironmentVariable("Seconds")));
+                var envDays = Environment.GetEnvironmentVariable("Days");
+                var expirationDateConvert = Convert.ToInt32(envDays);
+                DateTime expirationDate = createDate + TimeSpan.FromDays(expirationDateConvert);
                 var handler = new JwtSecurityTokenHandler();
                 string token = CreateToken(identity, createDate, expirationDate, handler);
                 return SuccessObject(createDate, expirationDate, token, baseUser);
             }
+
+            return new
+            {
+                authenticated = false,
+                message = "Falha ao atenticar"
+            };
         }
 
         private string CreateToken(ClaimsIdentity identity, DateTime createDate, DateTime expirationDate, JwtSecurityTokenHandler handler)

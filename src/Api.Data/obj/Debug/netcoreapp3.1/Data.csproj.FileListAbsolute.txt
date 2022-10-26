@@ -5,7 +5,6 @@
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/bin/Debug/netcoreapp3.1/Data.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/bin/Debug/netcoreapp3.1/Domain.dll
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/bin/Debug/netcoreapp3.1/Domain.pdb
-/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/Debug/netcoreapp3.1/Data.csprojAssemblyReference.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/Debug/netcoreapp3.1/Data.AssemblyInfoInputs.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/Debug/netcoreapp3.1/Data.AssemblyInfo.cs
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/Debug/netcoreapp3.1/Data.csproj.CoreCompileInputs.cache
@@ -13,3 +12,4 @@
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/Debug/netcoreapp3.1/Data.dll
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/Debug/netcoreapp3.1/Data.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/Debug/netcoreapp3.1/Data.genruntimeconfig.cache
+/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/Debug/netcoreapp3.1/Data.csprojAssemblyReference.cache

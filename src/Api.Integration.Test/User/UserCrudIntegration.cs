@@ -34,6 +34,8 @@ namespace Api.Integration.Test.User
             Assert.Equal(_name, registroPost.Name);
             Assert.Equal(_email, registroPost.Email);
             Assert.True(registroPost.Id != default(Guid));
+
+            
         }
     }
 }

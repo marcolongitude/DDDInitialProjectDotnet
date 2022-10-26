@@ -7,10 +7,10 @@
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/bin/Debug/netcoreapp3.1/Domain.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/bin/Debug/netcoreapp3.1/Service.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/bin/Debug/netcoreapp3.1/Data.pdb
-/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.csprojAssemblyReference.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.AssemblyInfoInputs.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.AssemblyInfo.cs
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.csproj.CoreCompileInputs.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.csproj.CopyComplete
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.dll
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.pdb
+/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.csprojAssemblyReference.cache

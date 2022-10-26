@@ -1,6 +1,5 @@
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/appsettings.json
-/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/application
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/application.deps.json
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/application.runtimeconfig.json
@@ -65,7 +64,6 @@
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/Service.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/CrossCutting.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/Data.pdb
-/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.csprojAssemblyReference.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.AssemblyInfoInputs.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.AssemblyInfo.cs
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.csproj.CoreCompileInputs.cache
@@ -74,7 +72,8 @@
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.RazorTargetAssemblyInfo.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.csproj.CopyComplete
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/staticwebassets/application.StaticWebAssets.Manifest.cache
-/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/staticwebassets/application.StaticWebAssets.xml
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.dll
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.genruntimeconfig.cache
+/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.csproj.AssemblyReference.cache
+/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.GeneratedMSBuildEditorConfig.editorconfig
