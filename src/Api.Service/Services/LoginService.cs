@@ -60,7 +60,8 @@ namespace Service.Services
                     new[]
                     {
                         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                        new Claim(JwtRegisteredClaimNames.UniqueName, user.Email),
+                        new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                        new Claim(JwtRegisteredClaimNames.Sid, baseUser.Id.ToString()),
                     }
                 );
 
