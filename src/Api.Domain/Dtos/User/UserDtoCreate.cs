@@ -12,6 +12,9 @@ namespace Domain.Dtos.User
         [EmailAddress(ErrorMessage = "Email em formato inválido!")]
         [StringLength(100, ErrorMessage = "Email deve ter no máximo {1} caracteres.")]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "Password é um campo obrigatório!")]
+        public string Password { get; set; }
     }
 }
 

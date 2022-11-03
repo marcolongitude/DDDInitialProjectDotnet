@@ -25,7 +25,7 @@
                 "MIGRATION": "NAOAPLICAR",
                 "Audience": "ExemploAudience",
                 "Issuer": "ExemploIssuer",
-                "Days": "1"
+                "DAYS": "1"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"

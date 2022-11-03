@@ -53,7 +53,7 @@ namespace Service.Services
                     message = "Falha ao atenticar"
                 };
             }
-            else if(baseUser.Password == user.Password)
+            else if (baseUser.Password == user.Password)
             {
                 ClaimsIdentity identity = new ClaimsIdentity(
                     new GenericIdentity(baseUser.Email),
@@ -65,7 +65,7 @@ namespace Service.Services
                 );
 
                 DateTime createDate = DateTime.Now;
-                var envDays = Environment.GetEnvironmentVariable("Days");
+                var envDays = Environment.GetEnvironmentVariable("DAYS");
                 var expirationDateConvert = Convert.ToInt32(envDays);
                 DateTime expirationDate = createDate + TimeSpan.FromDays(expirationDateConvert);
                 var handler = new JwtSecurityTokenHandler();

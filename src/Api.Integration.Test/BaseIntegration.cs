@@ -40,9 +40,10 @@ namespace Api.Integration.Test
 
         public async Task AddToken()
         {
-            var loginDto = new LoginDto()
+            LoginDto loginDto = new LoginDto()
             {
-                Email = "adm@gmail.com"
+                Email = "adm@gmail.com",
+                Password = "123456"
             };
 
             var resultLogin = await PostJsonAsync(loginDto, $"{hostApi}/login", client);
@@ -62,8 +63,10 @@ namespace Api.Integration.Test
 
         public void Dispose()
         {
-            myContext.Dispose();
+            // myContext.Dispose();
+            myContext.Database.EnsureDeleted();
             client.Dispose();
+
         }
     }
 

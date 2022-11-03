@@ -30,7 +30,8 @@ namespace Api.Service.Test.Login
 
             LoginDto loginDto = new LoginDto
             {
-                Email = email
+                Email = email,
+                Password = "123456"
             };
 
             _serviceMock = new Mock<ILoginService>();

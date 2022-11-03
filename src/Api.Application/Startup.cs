@@ -44,7 +44,7 @@ namespace application
                 Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
                 Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
                 Environment.SetEnvironmentVariable("Issuer", "ExemploIssuer");
-                Environment.SetEnvironmentVariable("Seconds", "28800");
+                Environment.SetEnvironmentVariable("DAYS", "1");
             }
 
             ConfigureService.ConfigureDependenciesService(services);
@@ -146,8 +146,8 @@ namespace application
             });
 
             if (env.IsDevelopment())
-{
-                IdentityModelEventSource.ShowPII = true; 
+            {
+                IdentityModelEventSource.ShowPII = true;
             }
 
             var applicationMigrationStartup = Environment.GetEnvironmentVariable("MIGRATION");

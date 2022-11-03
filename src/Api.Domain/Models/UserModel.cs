@@ -25,6 +25,14 @@ namespace Domain.Models
             set { _email = value; }
         }
 
+        private string _password;
+        public string Password
+        {
+            get { return _password; }
+            set { _password = value; }
+        }
+
+
         private DateTime _createAt;
         public DateTime CreateAt
         {
@@ -38,12 +46,6 @@ namespace Domain.Models
             get { return _updateAt; }
             set { _updateAt = value; }
         }
-
-
-
-
-
-
 
     }
 }
