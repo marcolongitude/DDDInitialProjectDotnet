@@ -10,6 +10,9 @@ namespace Api.Service.Test.User
         public static string UserEmail { get; set; }
         public static string UserNameUpdate { get; set; }
         public static string UserEmailUpdate { get; set; }
+        public static string UserCel { get; set; }
+        public static string UserCelUpdate { get; set; }
+        public static string UserPassword { get; set; }
 
         public static Guid UserId { get; set; }
 
@@ -32,6 +35,9 @@ namespace Api.Service.Test.User
             UserEmail = Faker.Internet.Email();
             UserNameUpdate = Faker.Name.FullName();
             UserEmailUpdate = Faker.Internet.Email();
+            UserCel = Faker.Identification.UKNationalInsuranceNumber();
+            UserCelUpdate = Faker.Identification.UKNationalInsuranceNumber();
+            UserPassword = Faker.RandomNumber.Next(100000, 100100).ToString();
 
             for (int i = 0; i < 10; i++)
             {
@@ -39,7 +45,8 @@ namespace Api.Service.Test.User
                 {
                     Id = Guid.NewGuid(),
                     Name = Faker.Name.FullName(),
-                    Email = Faker.Internet.Email()
+                    Email = Faker.Internet.Email(),
+                    Cel = Faker.Identification.UKNationalInsuranceNumber()
                 };
                 listUserDto.Add(dto);
             }
@@ -48,13 +55,16 @@ namespace Api.Service.Test.User
             {
                 Id = UserId,
                 Name = UserName,
-                Email = UserEmail
+                Email = UserEmail,
+                Cel = UserCel
             };
 
             userDtoCreate = new UserDtoCreate
             {
                 Name = UserName,
-                Email = UserEmail
+                Email = UserEmail,
+                Password = UserPassword,
+                Cel = UserCel
             };
 
             userDtoCreateResult = new UserDtoCreateResult
@@ -62,6 +72,7 @@ namespace Api.Service.Test.User
                 Id = UserId,
                 Name = UserName,
                 Email = UserEmail,
+                Cel = UserCel,
                 CreateAt = DateTime.UtcNow,
             };
 
@@ -70,6 +81,7 @@ namespace Api.Service.Test.User
                 Id = UserId,
                 Name = UserNameUpdate,
                 Email = UserEmailUpdate,
+                Cel = UserCelUpdate
             };
 
             userDtoUpdateResult = new UserDtoUpdateResult
@@ -77,6 +89,7 @@ namespace Api.Service.Test.User
                 Id = UserId,
                 Name = UserNameUpdate,
                 Email = UserEmailUpdate,
+                Cel = UserCelUpdate,
                 UpdateAt = DateTime.UtcNow,
             };
         }

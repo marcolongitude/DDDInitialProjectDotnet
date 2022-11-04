@@ -19,12 +19,15 @@ namespace Api.Application.Test.User.UserPost
             Mock<IUserService> _serviceMock = new Mock<IUserService>();
             string name = Faker.Name.FullName();
             string email = Faker.Internet.Email();
+            string cel = Faker.Phone.Number();
+            string password = Faker.RandomNumber.Next(100000, 100100).ToString();
 
             _serviceMock.Setup(m => m.Post(It.IsAny<UserDtoCreate>())).ReturnsAsync(new UserDtoCreateResult
             {
                 Id = Guid.NewGuid(),
                 Name = name,
                 Email = email,
+                Cel = cel,
                 CreateAt = DateTime.UtcNow,
             });
 
@@ -38,6 +41,8 @@ namespace Api.Application.Test.User.UserPost
             {
                 Name = name,
                 Email = email,
+                Cel = cel,
+                Password = password
             };
 
             ActionResult result = await _controller.Post(userDtoCreate);
@@ -47,6 +52,7 @@ namespace Api.Application.Test.User.UserPost
             Assert.NotNull(resultValue);
             Assert.Equal(userDtoCreate.Name, resultValue.Name);
             Assert.Equal(userDtoCreate.Email, resultValue.Email);
+            Assert.Equal(userDtoCreate.Cel, resultValue.Cel);
         }
     }
 }

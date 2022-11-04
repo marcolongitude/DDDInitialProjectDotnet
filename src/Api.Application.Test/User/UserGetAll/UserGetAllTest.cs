@@ -27,12 +27,14 @@ namespace Api.Application.Test.User.UserGetAll
                         Id = Guid.NewGuid(),
                         Name = Faker.Name.FullName(),
                         Email = Faker.Internet.Email(),
+                        Cel = Faker.Identification.UKNationalInsuranceNumber(),
                         CreateAt = DateTime.UtcNow
                     },
                     new UserDto {
                         Id = Guid.NewGuid(),
                         Name = Faker.Name.FullName(),
                         Email = Faker.Internet.Email(),
+                        Cel = Faker.Identification.UKNationalInsuranceNumber(),
                         CreateAt = DateTime.UtcNow
                     }
                 }

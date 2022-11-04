@@ -19,6 +19,7 @@ namespace Api.Application.Test.User.UserGet
             Mock<IUserService> _serviceMock = new Mock<IUserService>();
             string name = Faker.Name.FullName();
             string email = Faker.Internet.Email();
+            string cel = Faker.Identification.UKNationalInsuranceNumber();
 
             _serviceMock.Setup(m => m.Get(It.IsAny<Guid>())).ReturnsAsync(
                 new UserDto
@@ -26,6 +27,7 @@ namespace Api.Application.Test.User.UserGet
                     Id = Guid.NewGuid(),
                     Name = name,
                     Email = email,
+                    Cel = cel,
                     CreateAt = DateTime.UtcNow,
                 }
             );

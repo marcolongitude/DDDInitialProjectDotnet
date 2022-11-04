@@ -19,6 +19,7 @@ namespace Api.Application.Test.User.UserUpdate
             Mock<IUserService> _serviceMock = new Mock<IUserService>();
             string name = Faker.Name.FullName();
             string email = Faker.Internet.Email();
+            string cel = Faker.Phone.Number();
 
             _serviceMock.Setup(m => m.Put(It.IsAny<UserDtoUpdate>())).ReturnsAsync(
                 new UserDtoUpdateResult
@@ -26,6 +27,7 @@ namespace Api.Application.Test.User.UserUpdate
                     Id = Guid.NewGuid(),
                     Name = name,
                     Email = email,
+                    Cel = cel,
                     UpdateAt = DateTime.UtcNow,
                 }
             );
@@ -36,6 +38,7 @@ namespace Api.Application.Test.User.UserUpdate
             {
                 Id = Guid.NewGuid(),
                 Name = name,
+                Cel = cel,
                 Email = email
             };
 
@@ -46,6 +49,7 @@ namespace Api.Application.Test.User.UserUpdate
             Assert.NotNull(resultValue);
             Assert.Equal(userDtoUpdate.Name, resultValue.Name);
             Assert.Equal(userDtoUpdate.Email, resultValue.Email);
+            Assert.Equal(userDtoUpdate.Cel, resultValue.Cel);
         }
     }
 }
