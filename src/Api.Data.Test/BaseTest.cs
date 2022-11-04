@@ -23,7 +23,7 @@ namespace Api.Data.Test
         {
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddDbContext<MyContext>(o =>
-                o.UseSqlServer($"Server=127.0.0.1,1433;Initial Catalog={dataBaseName};MultipleActiveResultSets=true; User Id=sa;Password=Adminmagti*1981"),
+                o.UseMySql($"Server=localhost;Database={dataBaseName};Uid=root;Pwd=Adminmagti*1981"),
                 ServiceLifetime.Transient
             );
 

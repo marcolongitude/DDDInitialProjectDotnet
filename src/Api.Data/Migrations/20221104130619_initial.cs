@@ -16,7 +16,8 @@ namespace Data.Migrations
                     UpdateAt = table.Column<DateTime>(nullable: true),
                     Name = table.Column<string>(maxLength: 100, nullable: false),
                     Email = table.Column<string>(maxLength: 100, nullable: false),
-                    Password = table.Column<string>(maxLength: 100, nullable: false)
+                    Password = table.Column<string>(maxLength: 100, nullable: false),
+                    Cel = table.Column<string>(maxLength: 15, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -25,8 +26,8 @@ namespace Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "Id", "CreateAt", "Email", "Name", "Password", "UpdateAt" },
-                values: new object[] { new Guid("726e5afe-3b61-4941-9e40-badbdf251d01"), new DateTime(2022, 10, 26, 18, 48, 46, 37, DateTimeKind.Local).AddTicks(4450), "adm@gmail.com", "Administrador", "123456", new DateTime(2022, 10, 26, 18, 48, 46, 38, DateTimeKind.Local).AddTicks(3097) });
+                columns: new[] { "Id", "Cel", "CreateAt", "Email", "Name", "Password", "UpdateAt" },
+                values: new object[] { new Guid("3620c11d-0e0d-451a-bc3b-5d38b20c5c4c"), "64992959483", new DateTime(2022, 11, 4, 10, 6, 19, 442, DateTimeKind.Local).AddTicks(9596), "adm@gmail.com", "Administrador", "123456", new DateTime(2022, 11, 4, 10, 6, 19, 443, DateTimeKind.Local).AddTicks(7917) });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Email",

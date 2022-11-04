@@ -32,6 +32,12 @@ namespace Domain.Models
             set { _password = value; }
         }
 
+        private string cel;
+        public string Cel
+        {
+            get { return cel; }
+            set { cel = value; }
+        }
 
         private DateTime _createAt;
         public DateTime CreateAt

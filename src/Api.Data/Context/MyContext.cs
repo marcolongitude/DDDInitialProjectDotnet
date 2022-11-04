@@ -25,6 +25,7 @@ namespace Api.Data.Context
                     Name = "Administrador",
                     Email = "adm@gmail.com",
                     Password = "123456",
+                    Cel = "64992959483",
                     CreateAt = DateTime.Now,
                     UpdateAt = DateTime.Now,
                 }

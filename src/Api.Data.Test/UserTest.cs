@@ -28,12 +28,16 @@ namespace Api.Data.Test
             {
                 Email = Faker.Internet.Email(),
                 Name = Faker.Name.FullName(),
+                Password = Faker.RandomNumber.Next(100000, 100100).ToString(),
+                Cel = Faker.Phone.Number()
             };
 
             var createUser = await _repository.InsertAsync(_entity);
             Assert.NotNull(createUser);
             Assert.Equal(_entity.Email, createUser.Email);
             Assert.Equal(_entity.Name, createUser.Name);
+            Assert.Equal(_entity.Cel, createUser.Cel);
+            Assert.Equal(_entity.Password, createUser.Password);
             Assert.False(createUser.Id == Guid.Empty);
 
             _entity.Name = Faker.Name.First();
@@ -41,14 +45,18 @@ namespace Api.Data.Test
             Assert.NotNull(updateUser);
             Assert.Equal(_entity.Email, updateUser.Email);
             Assert.Equal(_entity.Name, updateUser.Name);
+            Assert.Equal(_entity.Cel, updateUser.Cel);
+            Assert.Equal(_entity.Password, updateUser.Password);
 
             var existsUser = await _repository.ExistAsync(updateUser.Id);
             Assert.True(existsUser);
 
             var selectedUser = await _repository.SelectAsync(updateUser.Id);
             Assert.NotNull(selectedUser);
-            Assert.Equal(updateUser.Email, updateUser.Email);
-            Assert.Equal(updateUser.Name, updateUser.Name);
+            Assert.Equal(selectedUser.Email, updateUser.Email);
+            Assert.Equal(selectedUser.Name, updateUser.Name);
+            Assert.Equal(selectedUser.Cel, updateUser.Cel);
+            Assert.Equal(selectedUser.Password, updateUser.Password);
 
             var allUsers = await _repository.SelectAsync();
             Assert.NotNull(allUsers);
@@ -57,11 +65,11 @@ namespace Api.Data.Test
             var removeUser = await _repository.DeleteAsync(updateUser.Id);
             Assert.True(removeUser);
 
-            var loginUser = await _repository.FindByLogin("adm@gmail.com", "12345678");
+            var loginUser = await _repository.FindByLogin("adm@gmail.com", "123456");
             Assert.NotNull(loginUser);
             Assert.Equal("adm@gmail.com", loginUser.Email);
             Assert.Equal("Administrador", loginUser.Name);
-            Assert.Equal("12345678", loginUser.Password);
+            Assert.Equal("123456", loginUser.Password);
         }
     }
 }

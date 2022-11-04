@@ -13,6 +13,9 @@ namespace Domain.Dtos.User
         [StringLength(100, ErrorMessage = "Email deve ter no máximo {1} caracteres.")]
         public string Email { get; set; }
 
+        [Required(ErrorMessage = "Cel é um campo obrigatório!")]
+        public string Cel { get; set; }
+
         [Required(ErrorMessage = "Password é um campo obrigatório!")]
         public string Password { get; set; }
     }
