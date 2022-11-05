@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Api.Domain.Dtos;
 using Api.Domain.Entities;
 using Api.Domain.Security;
+using Api.Service;
 using Domain.Interfaces.Services.User;
 using Domain.Repository;
 using Microsoft.Extensions.Configuration;
@@ -44,41 +45,41 @@ namespace Service.Services
 
             UserEntity baseUser = new UserEntity();
 
-            baseUser = await _repository.FindByLogin(user.Email, user.Password);
+            baseUser = await _repository.FindByLogin(user.Email);
             if (baseUser == null)
             {
                 return new
                 {
                     authenticated = false,
-                    message = "Falha ao atenticar"
+                    message = "Usuário não encontrado"
                 };
             }
-            else if (baseUser.Password == user.Password)
+            bool passwordVerified = PasswordHashed.VerifyHashedPassword(baseUser.Password, user.Password);
+            if (!passwordVerified)
             {
-                ClaimsIdentity identity = new ClaimsIdentity(
-                    new GenericIdentity(baseUser.Email),
-                    new[]
-                    {
+                return new
+                {
+                    authenticated = false,
+                    message = "Senha incorreta"
+                };
+            }
+            ClaimsIdentity identity = new ClaimsIdentity(
+                new GenericIdentity(baseUser.Email),
+                new[]
+                {
                         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                         new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                         new Claim(JwtRegisteredClaimNames.Sid, baseUser.Id.ToString()),
-                    }
-                );
+                }
+            );
 
-                DateTime createDate = DateTime.Now;
-                var envDays = Environment.GetEnvironmentVariable("DAYS");
-                var expirationDateConvert = Convert.ToInt32(envDays);
-                DateTime expirationDate = createDate + TimeSpan.FromDays(expirationDateConvert);
-                var handler = new JwtSecurityTokenHandler();
-                string token = CreateToken(identity, createDate, expirationDate, handler);
-                return SuccessObject(createDate, expirationDate, token, baseUser);
-            }
-
-            return new
-            {
-                authenticated = false,
-                message = "Falha ao atenticar"
-            };
+            DateTime createDate = DateTime.Now;
+            var envDays = Environment.GetEnvironmentVariable("DAYS");
+            var expirationDateConvert = Convert.ToInt32(envDays);
+            DateTime expirationDate = createDate + TimeSpan.FromDays(expirationDateConvert);
+            var handler = new JwtSecurityTokenHandler();
+            string token = CreateToken(identity, createDate, expirationDate, handler);
+            return SuccessObject(createDate, expirationDate, token, baseUser);
         }
 
         private string CreateToken(ClaimsIdentity identity, DateTime createDate, DateTime expirationDate, JwtSecurityTokenHandler handler)
