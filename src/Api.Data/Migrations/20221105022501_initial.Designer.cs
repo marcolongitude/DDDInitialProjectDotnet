@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20221104130619_initial")]
+    [Migration("20221105022501_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,13 +61,13 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("3620c11d-0e0d-451a-bc3b-5d38b20c5c4c"),
+                            Id = new Guid("934e44da-b3c0-4208-8b1f-fe0a7f910e0b"),
                             Cel = "64992959483",
-                            CreateAt = new DateTime(2022, 11, 4, 10, 6, 19, 442, DateTimeKind.Local).AddTicks(9596),
+                            CreateAt = new DateTime(2022, 11, 4, 22, 25, 1, 488, DateTimeKind.Local).AddTicks(1100),
                             Email = "adm@gmail.com",
                             Name = "Administrador",
                             Password = "123456",
-                            UpdateAt = new DateTime(2022, 11, 4, 10, 6, 19, 443, DateTimeKind.Local).AddTicks(7917)
+                            UpdateAt = new DateTime(2022, 11, 4, 22, 25, 1, 492, DateTimeKind.Local).AddTicks(2718)
                         });
                 });
 #pragma warning restore 612, 618
