@@ -20,5 +20,9 @@ namespace Domain.Dtos.User
         [Required(ErrorMessage = "O campo celular é obrigatório")]
         [StringLength(15, ErrorMessage = "O celular deve ter no máximo {1} caracteres")]
         public string Cel { get; set; }
+
+        [Required(ErrorMessage = "O campo senha é obrigatório")]
+        [StringLength(6, ErrorMessage = "O senha deve ter no máximo {1} caracteres")]
+        public string Password { get; set; }
     }
 }

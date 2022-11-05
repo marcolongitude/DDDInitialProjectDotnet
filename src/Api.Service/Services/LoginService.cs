@@ -94,7 +94,7 @@ namespace Service.Services
                 Expires = expirationDate,
             });
 
-            var token = handler.WriteToken(securityToken);
+            string token = handler.WriteToken(securityToken);
             return token;
         }
 

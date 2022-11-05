@@ -34,25 +34,35 @@ namespace Api.Service.Services
 
         public async Task<IEnumerable<UserDto>> GetAll()
         {
-            var listEntity = await _repository.SelectAsync();
+            IEnumerable<UserEntity> listEntity = await _repository.SelectAsync();
             return _mapper.Map<IEnumerable<UserDto>>(listEntity);
         }
 
         public async Task<UserDtoCreateResult> Post(UserDtoCreate user)
         {
-            var model = _mapper.Map<UserModel>(user);
-            var entity = _mapper.Map<UserEntity>(model);
+            UserModel model = _mapper.Map<UserModel>(user);
+            UserEntity entity = _mapper.Map<UserEntity>(model);
             entity.Password = PasswordHashed.HashPassword(user.Password);
-            var result = await _repository.InsertAsync(entity);
+            UserEntity result = await _repository.InsertAsync(entity);
 
             return _mapper.Map<UserDtoCreateResult>(result);
         }
 
         public async Task<UserDtoUpdateResult> Put(UserDtoUpdate user)
         {
-            var model = _mapper.Map<UserModel>(user);
-            var entity = _mapper.Map<UserEntity>(model);
-            var result = await _repository.UpdateAsync(entity);
+            var userExists = await _repository.SelectAsync(user.Id);
+
+            if (userExists == null)
+            {
+                throw new ArgumentNullException("user not exists");
+            }
+
+            UserModel model = _mapper.Map<UserModel>(user);
+            UserEntity entity = _mapper.Map<UserEntity>(model);
+
+            entity.Password = userExists.Password;
+
+            UserEntity result = await _repository.UpdateAsync(entity);
 
             return _mapper.Map<UserDtoUpdateResult>(result);
         }

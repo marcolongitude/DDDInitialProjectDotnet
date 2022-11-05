@@ -15,9 +15,9 @@ namespace Api.Service.Test.Login
         [Fact(DisplayName = "Login Test Unity")]
         public async Task LoginTestUnity()
         {
-            var email = Faker.Internet.Email();
+            string email = Faker.Internet.Email();
 
-            var objectResult = new
+            object objectResult = new
             {
                 authenticated = true,
                 created = DateTime.UtcNow,

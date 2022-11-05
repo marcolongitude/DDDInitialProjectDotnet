@@ -28,7 +28,7 @@ namespace Api.Service.Test.User
             _serviceMock.Setup(m => m.Get(It.IsAny<Guid>())).Returns(Task.FromResult((UserDto)null));
             _service = _serviceMock.Object;
 
-            var _record = await _service.Get(UserId);
+            UserDto _record = await _service.Get(UserId);
             Assert.Null(_record);
         }
     }
