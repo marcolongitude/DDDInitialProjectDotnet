@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class initial : Migration
+    public partial class initial_migrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -17,7 +17,8 @@ namespace Data.Migrations
                     Name = table.Column<string>(maxLength: 100, nullable: false),
                     Email = table.Column<string>(maxLength: 100, nullable: false),
                     Password = table.Column<string>(maxLength: 100, nullable: false),
-                    Cel = table.Column<string>(maxLength: 15, nullable: false)
+                    Cel = table.Column<string>(maxLength: 15, nullable: false),
+                    Permission = table.Column<string>(maxLength: 10, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -26,8 +27,8 @@ namespace Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "Id", "Cel", "CreateAt", "Email", "Name", "Password", "UpdateAt" },
-                values: new object[] { new Guid("3fd22209-5bc4-47a7-a6d4-0a9cba50e838"), "64992959483", new DateTime(2022, 11, 7, 11, 47, 47, 106, DateTimeKind.Local).AddTicks(1242), "adm@gmail.com", "Administrador", "AJVubWbqOapXMlj8lr1H0wTjdrtpI6zDaXFTZkoVwWBSiscNjdMvzz1nyVK3WP+RWQ==", new DateTime(2022, 11, 7, 11, 47, 47, 107, DateTimeKind.Local).AddTicks(33) });
+                columns: new[] { "Id", "Cel", "CreateAt", "Email", "Name", "Password", "Permission", "UpdateAt" },
+                values: new object[] { new Guid("f749de26-52b3-41a4-9a34-08ed2af17772"), "64992959483", new DateTime(2022, 11, 7, 16, 42, 13, 480, DateTimeKind.Local).AddTicks(3867), "adm@gmail.com", "Administrador", "AJVubWbqOapXMlj8lr1H0wTjdrtpI6zDaXFTZkoVwWBSiscNjdMvzz1nyVK3WP+RWQ==", "admin", new DateTime(2022, 11, 7, 16, 42, 13, 481, DateTimeKind.Local).AddTicks(2508) });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Email",

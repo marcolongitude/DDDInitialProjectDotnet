@@ -29,7 +29,8 @@ namespace Api.Data.Test
                 Email = Faker.Internet.Email(),
                 Name = Faker.Name.FullName(),
                 Password = Faker.RandomNumber.Next(100000, 100100).ToString(),
-                Cel = Faker.Phone.Number()
+                Cel = Faker.Phone.Number(),
+                Permission = Roles.admin,
             };
 
             var createUser = await _repository.InsertAsync(_entity);
@@ -38,6 +39,7 @@ namespace Api.Data.Test
             Assert.Equal(_entity.Name, createUser.Name);
             Assert.Equal(_entity.Cel, createUser.Cel);
             Assert.Equal(_entity.Password, createUser.Password);
+            Assert.Equal(_entity.Permission, createUser.Permission);
             Assert.False(createUser.Id == Guid.Empty);
 
             _entity.Name = Faker.Name.First();
@@ -47,6 +49,7 @@ namespace Api.Data.Test
             Assert.Equal(_entity.Name, updateUser.Name);
             Assert.Equal(_entity.Cel, updateUser.Cel);
             Assert.Equal(_entity.Password, updateUser.Password);
+            Assert.Equal(_entity.Permission, updateUser.Permission);
 
             var existsUser = await _repository.ExistAsync(updateUser.Id);
             Assert.True(existsUser);
@@ -57,6 +60,7 @@ namespace Api.Data.Test
             Assert.Equal(selectedUser.Name, updateUser.Name);
             Assert.Equal(selectedUser.Cel, updateUser.Cel);
             Assert.Equal(selectedUser.Password, updateUser.Password);
+            Assert.Equal(_entity.Permission, updateUser.Permission);
 
             var allUsers = await _repository.SelectAsync();
             Assert.NotNull(allUsers);

@@ -1,3 +1,4 @@
+using System.Buffers;
 using System;
 using Api.Data.Mapping;
 using Api.Domain.Entities;
@@ -27,6 +28,7 @@ namespace Api.Data.Context
                     Email = "adm@gmail.com",
                     Password = "AJVubWbqOapXMlj8lr1H0wTjdrtpI6zDaXFTZkoVwWBSiscNjdMvzz1nyVK3WP+RWQ==",
                     Cel = "64992959483",
+                    Permission = Roles.admin,
                     CreateAt = DateTime.Now,
                     UpdateAt = DateTime.Now,
                 }

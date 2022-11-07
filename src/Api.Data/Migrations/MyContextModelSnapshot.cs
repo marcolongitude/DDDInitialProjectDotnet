@@ -46,6 +46,11 @@ namespace Data.Migrations
                         .HasColumnType("varchar(100) CHARACTER SET utf8mb4")
                         .HasMaxLength(100);
 
+                    b.Property<string>("Permission")
+                        .IsRequired()
+                        .HasColumnType("varchar(10) CHARACTER SET utf8mb4")
+                        .HasMaxLength(10);
+
                     b.Property<DateTime?>("UpdateAt")
                         .HasColumnType("datetime(6)");
 
@@ -59,13 +64,14 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("3fd22209-5bc4-47a7-a6d4-0a9cba50e838"),
+                            Id = new Guid("f749de26-52b3-41a4-9a34-08ed2af17772"),
                             Cel = "64992959483",
-                            CreateAt = new DateTime(2022, 11, 7, 11, 47, 47, 106, DateTimeKind.Local).AddTicks(1242),
+                            CreateAt = new DateTime(2022, 11, 7, 16, 42, 13, 480, DateTimeKind.Local).AddTicks(3867),
                             Email = "adm@gmail.com",
                             Name = "Administrador",
                             Password = "AJVubWbqOapXMlj8lr1H0wTjdrtpI6zDaXFTZkoVwWBSiscNjdMvzz1nyVK3WP+RWQ==",
-                            UpdateAt = new DateTime(2022, 11, 7, 11, 47, 47, 107, DateTimeKind.Local).AddTicks(33)
+                            Permission = "admin",
+                            UpdateAt = new DateTime(2022, 11, 7, 16, 42, 13, 481, DateTimeKind.Local).AddTicks(2508)
                         });
                 });
 #pragma warning restore 612, 618
