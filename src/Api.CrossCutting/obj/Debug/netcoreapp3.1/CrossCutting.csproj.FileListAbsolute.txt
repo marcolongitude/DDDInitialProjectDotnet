@@ -30,3 +30,5 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.CrossCutting\obj\Debug\n
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csproj.CopyComplete
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.pdb
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Api.Utils.dll
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Api.Utils.pdb

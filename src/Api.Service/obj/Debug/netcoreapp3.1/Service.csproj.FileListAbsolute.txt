@@ -26,3 +26,5 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcor
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\obj\Debug\netcoreapp3.1\Service.pdb
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\bin\Debug\netcoreapp3.1\Api.Utils.dll
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Service\bin\Debug\netcoreapp3.1\Api.Utils.pdb

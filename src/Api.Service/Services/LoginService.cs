@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Api.Domain.Dtos;
 using Api.Domain.Entities;
 using Api.Domain.Security;
-using Api.Service;
+using Api.Utils.Functions;
 using Domain.Interfaces.Services.User;
 using Domain.Repository;
 using Microsoft.Extensions.Configuration;

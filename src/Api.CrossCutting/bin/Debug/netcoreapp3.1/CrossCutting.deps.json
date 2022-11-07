@@ -957,6 +957,11 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "Api.Utils/1.0.0": {
+        "runtime": {
+          "Api.Utils.dll": {}
+        }
+      },
       "Data/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
@@ -977,6 +982,7 @@
       },
       "Service/1.0.0": {
         "dependencies": {
+          "Api.Utils": "1.0.0",
           "AutoMapper": "10.0.0",
           "Data": "1.0.0",
           "Domain": "1.0.0"
@@ -1671,6 +1677,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "Api.Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Data/1.0.0": {
       "type": "project",

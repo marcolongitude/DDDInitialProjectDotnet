@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces;
 using Api.Domain.Interfaces.Services.User;
+using Api.Utils.Functions;
 using AutoMapper;
 using Domain.Dtos.User;
 using Domain.Models;
@@ -23,6 +24,13 @@ namespace Api.Service.Services
 
         public async Task<bool> Delete(Guid id)
         {
+            var userExists = await _repository.SelectAsync(id);
+
+            if (userExists == null)
+            {
+                throw new ArgumentNullException("user not exists");
+            }
+
             return await _repository.DeleteAsync(id);
         }
 

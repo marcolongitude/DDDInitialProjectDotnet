@@ -1369,6 +1369,16 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Api.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Api.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Utils.dll": {}
+        }
+      },
       "Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5332,6 +5342,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Api.Utils/1.0.0": {
+      "type": "project",
+      "path": "../Api.Utils/Api.Utils.csproj",
+      "msbuildProject": "../Api.Utils/Api.Utils.csproj"
+    },
     "Data/1.0.0": {
       "type": "project",
       "path": "../Api.Data/Data.csproj",
@@ -5345,6 +5360,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Api.Utils >= 1.0.0",
       "AutoMapper >= 10.0.0",
       "Data >= 1.0.0",
       "Domain >= 1.0.0"
@@ -5384,6 +5400,9 @@
             },
             "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj"
+            },
+            "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Utils\\Api.Utils.csproj": {
+              "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Utils\\Api.Utils.csproj"
             }
           }
         }

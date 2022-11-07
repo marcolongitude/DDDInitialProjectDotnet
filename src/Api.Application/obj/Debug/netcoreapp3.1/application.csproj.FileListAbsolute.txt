@@ -156,3 +156,5 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\ne
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.genruntimeconfig.cache
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Api.Utils.dll
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Api.Utils.pdb

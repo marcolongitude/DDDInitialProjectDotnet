@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
 using System;
 
-namespace Api.Service
+namespace Api.Utils.Functions
 {
     public class PasswordHashed
     {
