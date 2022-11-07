@@ -135,6 +135,7 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\ne
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Api.Utils.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\CrossCutting.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Data.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Domain.dll
@@ -143,6 +144,7 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\ne
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Service.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\CrossCutting.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Api.Utils.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.csprojAssemblyReference.cache
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.AssemblyInfoInputs.cache
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.AssemblyInfo.cs
@@ -156,5 +158,3 @@ C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\ne
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.dll
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.pdb
 C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\obj\Debug\netcoreapp3.1\application.genruntimeconfig.cache
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Api.Utils.dll
-C:\Users\marco\Documents\myprojects\sfecontatos\src\Api.Application\bin\Debug\netcoreapp3.1\Api.Utils.pdb
