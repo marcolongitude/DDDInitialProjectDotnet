@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/application.csproj": {}
+    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Application\\application.csproj": {}
   },
   "projects": {
-    "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/application.csproj": {
+    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Application\\application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/application.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Application\\application.csproj",
         "projectName": "application",
-        "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/application.csproj",
-        "packagesPath": "/home/marco/.nuget/packages/",
-        "outputPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/",
+        "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Application\\application.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/marco/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -25,14 +29,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/CrossCutting.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/CrossCutting.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.CrossCutting\\CrossCutting.csproj"
               },
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj"
               },
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/Service.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/Service.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -73,21 +77,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.424/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/CrossCutting.csproj": {
+    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
-        "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/CrossCutting.csproj",
-        "packagesPath": "/home/marco/.nuget/packages/",
-        "outputPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.CrossCutting/obj/",
+        "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/marco/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -98,14 +106,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/Data.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/Data.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Data\\Data.csproj"
               },
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj"
               },
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/Service.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/Service.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -143,21 +151,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.424/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/Data.csproj": {
+    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/Data.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/Data.csproj",
-        "packagesPath": "/home/marco/.nuget/packages/",
-        "outputPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/obj/",
+        "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/marco/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -168,8 +180,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -219,21 +231,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.424/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj": {
+    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj",
-        "packagesPath": "/home/marco/.nuget/packages/",
-        "outputPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/obj/",
+        "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/marco/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -275,21 +291,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.424/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/Service.csproj": {
+    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/Service.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/Service.csproj",
-        "packagesPath": "/home/marco/.nuget/packages/",
-        "outputPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Service/obj/",
+        "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/marco/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -300,11 +320,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/Data.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Data/Data.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Data\\Data.csproj"
               },
-              "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj": {
-                "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj"
+              "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -338,7 +358,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.424/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
         }
       }
     }

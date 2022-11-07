@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Api.CrossCutting.DependencyInjection;
+using Api.CrossCutting.Functions;
 using Api.CrossCutting.Mappings;
 using Api.Data.Context;
 using Api.Domain.Security;
@@ -154,8 +155,9 @@ namespace application
 
             if (applicationMigrationStartup.ToLower() == "APLICAR".ToLower())
             {
+                var pass = PasswordHashed.HashPassword("123456");
                 using (var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
-                                                            .CreateScope())
+                                                           .CreateScope())
                 {
                     using (var context = service.ServiceProvider.GetService<MyContext>())
                     {
