@@ -23,6 +23,8 @@ namespace Api.Service.Test.User
             Assert.NotNull(result);
             Assert.True(result.Id == UserId);
             Assert.Equal(UserName, result.Name);
+            Assert.Equal(UserCel, result.Cel);
+            Assert.Equal(UserPermission, result.Permission);
 
             _serviceMock = new Mock<IUserService>();
             _serviceMock.Setup(m => m.Get(It.IsAny<Guid>())).Returns(Task.FromResult((UserDto)null));

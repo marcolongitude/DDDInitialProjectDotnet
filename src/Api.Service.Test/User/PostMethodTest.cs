@@ -21,7 +21,8 @@ namespace Api.Service.Test.User
             Assert.NotNull(result);
             Assert.Equal(UserName, result.Name);
             Assert.Equal(UserEmail, result.Email);
-
+            Assert.Equal(UserCel, result.Cel);
+            Assert.Equal(UserPermission, result.Permission);
         }
     }
 }

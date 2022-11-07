@@ -24,5 +24,8 @@ namespace Domain.Dtos.User
         [Required(ErrorMessage = "O campo senha é obrigatório")]
         [StringLength(6, ErrorMessage = "O senha deve ter no máximo {1} caracteres")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "O campo senha é obrigatório")]
+        public string Permission { get; set; }
     }
 }

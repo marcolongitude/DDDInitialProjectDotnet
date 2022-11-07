@@ -8,6 +8,7 @@ namespace Domain.Dtos.User
         public string Name { get; set; }
         public string Email { get; set; }
         public string Cel { get; set; }
+        public string Permission { get; set; }
         public DateTime UpdateAt { get; set; }
     }
 }

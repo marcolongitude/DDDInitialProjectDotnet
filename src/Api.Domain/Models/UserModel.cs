@@ -39,6 +39,14 @@ namespace Domain.Models
             set { cel = value; }
         }
 
+        private string permission;
+        public string Permission
+        {
+            get { return permission; }
+            set { permission = value; }
+        }
+
+
         private DateTime _createAt;
         public DateTime CreateAt
         {

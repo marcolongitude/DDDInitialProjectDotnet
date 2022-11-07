@@ -18,6 +18,9 @@ namespace Domain.Dtos.User
 
         [Required(ErrorMessage = "Password é um campo obrigatório!")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "Permissão é um campo obrigatório")]
+        public string Permission { get; set; }
     }
 }
 

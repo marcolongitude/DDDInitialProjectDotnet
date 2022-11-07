@@ -22,6 +22,7 @@ namespace Api.Service.Test.User
             Assert.Equal(UserName, result.Name);
             Assert.Equal(UserEmail, result.Email);
             Assert.Equal(UserCel, result.Cel);
+            Assert.Equal(UserPermission, result.Permission);
 
             _serviceMock = new Mock<IUserService>();
             _serviceMock.Setup(m => m.Put(userDtoUpdate)).ReturnsAsync(userDtoUpdateResult);
@@ -32,7 +33,7 @@ namespace Api.Service.Test.User
             Assert.Equal(UserNameUpdate, updateResult.Name);
             Assert.Equal(UserEmailUpdate, updateResult.Email);
             Assert.Equal(UserCelUpdate, updateResult.Cel);
-
+            Assert.Equal(UserPermission, updateResult.Permission);
         }
     }
 }

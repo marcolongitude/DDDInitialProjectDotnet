@@ -13,6 +13,7 @@ namespace Api.Service.Test.User
         public static string UserCel { get; set; }
         public static string UserCelUpdate { get; set; }
         public static string UserPassword { get; set; }
+        public string UserPermission { get; set; }
 
         public static Guid UserId { get; set; }
 
@@ -35,9 +36,10 @@ namespace Api.Service.Test.User
             UserEmail = Faker.Internet.Email();
             UserNameUpdate = Faker.Name.FullName();
             UserEmailUpdate = Faker.Internet.Email();
-            UserCel = Faker.Identification.UKNationalInsuranceNumber();
-            UserCelUpdate = Faker.Identification.UKNationalInsuranceNumber();
+            UserCel = Faker.Phone.Number();
+            UserCelUpdate = Faker.Phone.Number();
             UserPassword = Faker.RandomNumber.Next(100000, 100100).ToString();
+            UserPermission = "admin";
 
             for (int i = 0; i < 10; i++)
             {
@@ -46,7 +48,8 @@ namespace Api.Service.Test.User
                     Id = Guid.NewGuid(),
                     Name = Faker.Name.FullName(),
                     Email = Faker.Internet.Email(),
-                    Cel = Faker.Identification.UKNationalInsuranceNumber()
+                    Cel = Faker.Phone.Number(),
+                    Permission = "admin"
                 };
                 listUserDto.Add(dto);
             }
@@ -56,6 +59,7 @@ namespace Api.Service.Test.User
                 Id = UserId,
                 Name = UserName,
                 Email = UserEmail,
+                Permission = UserPermission,
                 Cel = UserCel
             };
 
@@ -64,6 +68,7 @@ namespace Api.Service.Test.User
                 Name = UserName,
                 Email = UserEmail,
                 Password = UserPassword,
+                Permission = UserPermission,
                 Cel = UserCel
             };
 
@@ -73,6 +78,7 @@ namespace Api.Service.Test.User
                 Name = UserName,
                 Email = UserEmail,
                 Cel = UserCel,
+                Permission = UserPermission,
                 CreateAt = DateTime.UtcNow,
             };
 
@@ -81,7 +87,8 @@ namespace Api.Service.Test.User
                 Id = UserId,
                 Name = UserNameUpdate,
                 Email = UserEmailUpdate,
-                Cel = UserCelUpdate
+                Cel = UserCelUpdate,
+                Permission = UserPermission
             };
 
             userDtoUpdateResult = new UserDtoUpdateResult
@@ -90,6 +97,7 @@ namespace Api.Service.Test.User
                 Name = UserNameUpdate,
                 Email = UserEmailUpdate,
                 Cel = UserCelUpdate,
+                Permission = UserPermission,
                 UpdateAt = DateTime.UtcNow,
             };
         }
