@@ -13,6 +13,7 @@ namespace Api.Integration.Test.User
         private string _name { get; set; }
         private string _email { get; set; }
         private string _cel { get; set; }
+        private string _permission { get; set; }
 
         [Fact(DisplayName = "User Crud Test Integration")]
         public async Task UserCrudIntegrationTest()
@@ -21,12 +22,14 @@ namespace Api.Integration.Test.User
             _name = Faker.Name.First();
             _email = Faker.Internet.Email();
             _cel = Faker.Phone.Number();
+            _permission = "admin";
 
             var userDtoCreate = new UserDtoCreate()
             {
                 Name = _name,
                 Email = _email,
                 Cel = _cel,
+                Permission = _permission,
                 Password = "123456"
             };
 
@@ -38,6 +41,7 @@ namespace Api.Integration.Test.User
             Assert.Equal(_name, registroPost.Name);
             Assert.Equal(_email, registroPost.Email);
             Assert.Equal(_cel, registroPost.Cel);
+            Assert.Equal(_permission, registroPost.Permission);
             Assert.True(registroPost.Id != default(Guid));
         }
     }
