@@ -84,6 +84,15 @@
                 "test",
                 "${workspaceFolder}/Api.Integration.Test/Api.Integration.Test.csproj",
             ]
+        },
+        {
+            "label": "Utils.Testes",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/Api.Utils.Test/Api.Utils.Test.csproj",
+            ]
         }
     ]
 }

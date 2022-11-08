@@ -64,14 +64,14 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("e605559e-1abe-4ff4-be93-fed9e5e959e6"),
+                            Id = new Guid("3383b9b8-7ba5-423a-8150-8124acdee46b"),
                             Cel = "64992959483",
-                            CreateAt = new DateTime(2022, 11, 7, 16, 48, 40, 544, DateTimeKind.Local).AddTicks(5005),
+                            CreateAt = new DateTime(2022, 11, 7, 20, 50, 24, 344, DateTimeKind.Local).AddTicks(5740),
                             Email = "adm@gmail.com",
                             Name = "Administrador",
                             Password = "AJVubWbqOapXMlj8lr1H0wTjdrtpI6zDaXFTZkoVwWBSiscNjdMvzz1nyVK3WP+RWQ==",
                             Permission = "admin",
-                            UpdateAt = new DateTime(2022, 11, 7, 16, 48, 40, 545, DateTimeKind.Local).AddTicks(3090)
+                            UpdateAt = new DateTime(2022, 11, 7, 20, 50, 24, 349, DateTimeKind.Local).AddTicks(1490)
                         });
                 });
 #pragma warning restore 612, 618

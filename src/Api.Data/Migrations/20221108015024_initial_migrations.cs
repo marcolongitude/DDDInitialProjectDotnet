@@ -17,7 +17,7 @@ namespace Data.Migrations
                     Name = table.Column<string>(maxLength: 100, nullable: false),
                     Email = table.Column<string>(maxLength: 100, nullable: false),
                     Password = table.Column<string>(maxLength: 100, nullable: false),
-                    Cel = table.Column<string>(maxLength: 15, nullable: false),
+                    Cel = table.Column<string>(maxLength: 25, nullable: false),
                     Permission = table.Column<string>(maxLength: 10, nullable: false)
                 },
                 constraints: table =>
@@ -28,7 +28,7 @@ namespace Data.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "Cel", "CreateAt", "Email", "Name", "Password", "Permission", "UpdateAt" },
-                values: new object[] { new Guid("f749de26-52b3-41a4-9a34-08ed2af17772"), "64992959483", new DateTime(2022, 11, 7, 16, 42, 13, 480, DateTimeKind.Local).AddTicks(3867), "adm@gmail.com", "Administrador", "AJVubWbqOapXMlj8lr1H0wTjdrtpI6zDaXFTZkoVwWBSiscNjdMvzz1nyVK3WP+RWQ==", "admin", new DateTime(2022, 11, 7, 16, 42, 13, 481, DateTimeKind.Local).AddTicks(2508) });
+                values: new object[] { new Guid("3383b9b8-7ba5-423a-8150-8124acdee46b"), "64992959483", new DateTime(2022, 11, 7, 20, 50, 24, 344, DateTimeKind.Local).AddTicks(5740), "adm@gmail.com", "Administrador", "AJVubWbqOapXMlj8lr1H0wTjdrtpI6zDaXFTZkoVwWBSiscNjdMvzz1nyVK3WP+RWQ==", "admin", new DateTime(2022, 11, 7, 20, 50, 24, 349, DateTimeKind.Local).AddTicks(1490) });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Email",

@@ -145,8 +145,8 @@ C:/Users/marco/Documents/myprojects/sfecontatos/src/Api.Application/obj/Debug/ne
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/Domain.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/Service.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/CrossCutting.pdb
-/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/Data.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/Api.Utils.pdb
+/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/bin/Debug/netcoreapp3.1/Data.pdb
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.csprojAssemblyReference.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.AssemblyInfoInputs.cache
 /home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Application/obj/Debug/netcoreapp3.1/application.AssemblyInfo.cs
