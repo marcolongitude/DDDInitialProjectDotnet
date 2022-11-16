@@ -18,6 +18,7 @@ namespace Api.Data.Context
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<UserEntity>(new UserMap().Configure);
+            modelBuilder.Entity<PostEntity>(new PostsMap().Configure);
 
 
             modelBuilder.Entity<UserEntity>().HasData(

@@ -3,14 +3,16 @@ using System;
 using Api.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Data.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20221116000347_PostsTableAdd")]
+    partial class PostsTableAdd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,12 +40,7 @@ namespace Data.Migrations
                     b.Property<DateTime?>("UpdateAt")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("char(36)");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Posts");
                 });
@@ -82,6 +79,9 @@ namespace Data.Migrations
                         .HasColumnType("varchar(10) CHARACTER SET utf8mb4")
                         .HasMaxLength(10);
 
+                    b.Property<Guid?>("PostEntityId")
+                        .HasColumnType("char(36)");
+
                     b.Property<DateTime?>("UpdateAt")
                         .HasColumnType("datetime(6)");
 
@@ -90,29 +90,29 @@ namespace Data.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
+                    b.HasIndex("PostEntityId");
+
                     b.ToTable("Users");
 
                     b.HasData(
                         new
                         {
-                            Id = new Guid("9b4a9981-ba72-42b6-bbfc-91370912ece8"),
+                            Id = new Guid("406e53b0-905e-4cc9-ae56-c96b9f48659d"),
                             Cel = "64992959483",
-                            CreateAt = new DateTime(2022, 11, 15, 21, 29, 42, 192, DateTimeKind.Local).AddTicks(2782),
+                            CreateAt = new DateTime(2022, 11, 15, 21, 3, 46, 813, DateTimeKind.Local).AddTicks(4030),
                             Email = "adm@gmail.com",
                             Name = "Administrador",
                             Password = "AJVubWbqOapXMlj8lr1H0wTjdrtpI6zDaXFTZkoVwWBSiscNjdMvzz1nyVK3WP+RWQ==",
                             Permission = "admin",
-                            UpdateAt = new DateTime(2022, 11, 15, 21, 29, 42, 196, DateTimeKind.Local).AddTicks(5958)
+                            UpdateAt = new DateTime(2022, 11, 15, 21, 3, 46, 819, DateTimeKind.Local).AddTicks(6816)
                         });
                 });
 
-            modelBuilder.Entity("Api.Domain.Entities.PostEntity", b =>
+            modelBuilder.Entity("Api.Domain.Entities.UserEntity", b =>
                 {
-                    b.HasOne("Api.Domain.Entities.UserEntity", "UserEntity")
-                        .WithMany("Posts")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Api.Domain.Entities.PostEntity", null)
+                        .WithMany("User")
+                        .HasForeignKey("PostEntityId");
                 });
 #pragma warning restore 612, 618
         }

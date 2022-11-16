@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Api.Domain.Entities
 {
     public enum Roles
@@ -12,5 +14,8 @@ namespace Api.Domain.Entities
         public string Password { get; set; }
         public string Cel { get; set; }
         public Roles Permission { get; set; }
+
+        public virtual ICollection<PostEntity> Posts { get; set; }
+
     }
 }
