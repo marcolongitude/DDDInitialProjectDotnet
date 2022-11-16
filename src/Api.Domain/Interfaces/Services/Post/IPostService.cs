@@ -10,8 +10,8 @@ namespace Api.Domain.Interfaces.Services.Post
     {
         Task<PostDto> Get(Guid id);
         Task<IEnumerable<PostDto>> GetAll();
-        Task<PostDtoCreateResult> Post(PostDtoCreate user);
-        Task<PostDtoUpdateResult> Put(PostDtoUpdate user);
+        Task<PostDtoCreateResult> Post(PostDtoCreate post);
+        Task<PostDtoUpdateResult> Put(PostDtoUpdate post);
         Task<bool> Delete(Guid id);
     }
 }
