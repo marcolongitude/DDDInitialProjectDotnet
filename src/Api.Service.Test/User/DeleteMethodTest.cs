@@ -27,7 +27,6 @@ namespace Api.Service.Test.User
 
             result = await _service.Delete(Guid.NewGuid());
             Assert.False(result);
-
         }
     }
 }
