@@ -1,5 +1,7 @@
+using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 
 namespace Api.Data.Context
 {
@@ -7,9 +9,10 @@ namespace Api.Data.Context
     {
         public MyContext CreateDbContext(string[] args)
         {
-            var connectionString = "Server=localhost;Database=sfe_contatos;Uid=root;Pwd=Adminmagti*1981";
+            var dbConnectionString = "Server=localhost;Database=sfe_contatos;Uid=root;Pwd=Adminmagti*1981";
+            //var dbConnectionString = "Persist Security Info=True;Server=127.0.0.1,1433;Initial Catalog=dbIntegration1;MultipleActiveResultSets=true; User Id=sa;Password=Adminmagti*1981";
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
-            optionsBuilder.UseMySql(connectionString);
+            optionsBuilder.UseMySql(dbConnectionString);
             return new MyContext(optionsBuilder.Options);
         }
     }

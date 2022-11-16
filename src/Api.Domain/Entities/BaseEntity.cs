@@ -17,9 +17,5 @@ namespace Api.Domain.Entities
 
         public DateTime? UpdateAt { get; set; }
 
-
-
-
-
     }
 }

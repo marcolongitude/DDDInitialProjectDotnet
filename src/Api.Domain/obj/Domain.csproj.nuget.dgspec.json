@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {}
+    "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj": {
+    "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marco\\Documents\\myprojects\\sfecontatos\\src\\Api.Domain\\obj\\",
+        "projectPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/Domain.csproj",
+        "packagesPath": "/home/marco/.nuget/packages/",
+        "outputPath": "/home/marco/Documentos/myprojects/DDDInitialProjectDotnet/src/Api.Domain/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marco/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -39,6 +35,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.423\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.424/RuntimeIdentifierGraph.json"
         }
       }
     }
