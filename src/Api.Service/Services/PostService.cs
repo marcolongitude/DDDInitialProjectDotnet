@@ -65,6 +65,7 @@ namespace Api.Service.Services
 
             PostModel model = _mapper.Map<PostModel>(post);
             PostEntity entity = _mapper.Map<PostEntity>(model);
+            entity.UserId = postExists.UserId;
             PostEntity result = await _repository.UpdateAsync(entity);
 
             return _mapper.Map<PostDtoUpdateResult>(result);
