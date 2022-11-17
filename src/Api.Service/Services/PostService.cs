@@ -15,6 +15,12 @@ namespace Api.Service.Services
     {
         private IRepository<PostEntity> _repository;
         private readonly IMapper _mapper;
+
+        public PostService(IRepository<PostEntity> repository, IMapper mapper)
+        {
+            _repository = repository;
+            _mapper = mapper;
+        }
         public async Task<bool> Delete(Guid id)
         {
             PostEntity postExists = await _repository.SelectAsync(id);

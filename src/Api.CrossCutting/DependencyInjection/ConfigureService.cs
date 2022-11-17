@@ -1,3 +1,4 @@
+using Api.Domain.Interfaces.Services.Post;
 using Api.Domain.Interfaces.Services.User;
 using Api.Service.Services;
 using Domain.Interfaces.Services.User;
@@ -12,6 +13,7 @@ namespace Api.CrossCutting.DependencyInjection
         {
             serviceColletcion.AddTransient<IUserService, UserService>();
             serviceColletcion.AddTransient<ILoginService, LoginService>();
+            serviceColletcion.AddTransient<IPostService, PostService>();
         }
     }
 }

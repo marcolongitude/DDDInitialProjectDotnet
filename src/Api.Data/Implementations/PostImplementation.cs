@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using Api.Data.Context;
 using Api.Data.Repository;
 using Api.Domain.Entities;
+using Api.Domain.Interfaces.Services.Post;
+using Domain.Repository;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api.Data.Implementations
+namespace Data.Implementations
 {
-    public class PostImplementation : BaseRepository<PostEntity>
+    public class PostImplementation : BaseRepository<PostEntity>, IPostRepository
     {
         private DbSet<PostEntity> _dataset;
         public PostImplementation(MyContext context) : base(context)
