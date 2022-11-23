@@ -13,7 +13,7 @@ namespace Api.Application.Controllers
     [Route("api/v1/[controller]")]
     public class PostController : ControllerBase
     {
-        private IPostService _service;
+        protected IPostService _service;
 
         public PostController(IPostService service)
         {
@@ -36,6 +36,8 @@ namespace Api.Application.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
             }
         }
+
+
 
         [Authorize("Bearer")]
         [HttpGet]
