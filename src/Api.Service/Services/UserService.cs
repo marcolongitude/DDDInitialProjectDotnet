@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Api.Domain.Dtos.User;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces;
 using Api.Domain.Interfaces.Services.User;
@@ -73,6 +74,35 @@ namespace Api.Service.Services
             UserEntity result = await _repository.UpdateAsync(entity);
 
             return _mapper.Map<UserDtoUpdateResult>(result);
+        }
+
+        public async Task<object> ChangePassword(UserChangePassword user)
+        {
+            var userExists = await _repository.SelectAsync(user.Id);
+
+            if (userExists == null)
+            {
+                throw new ArgumentNullException("user not exists");
+            }
+
+            if (PasswordHashed.VerifyHashedPassword(userExists.Password, user.OldPassword))
+            {
+                userExists.Password = PasswordHashed.HashPassword(user.NewPassword);
+                await _repository.UpdateAsync(userExists);
+                return new ResponseMessage
+                {
+                    Message = "senha trocada com sucesso",
+                    Status = true
+                };
+            }
+            else
+            {
+                return new ResponseMessage
+                {
+                    Message = "senha incorreta",
+                    Status = false
+                };
+            }
         }
     }
 }
