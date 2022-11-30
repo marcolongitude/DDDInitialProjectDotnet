@@ -117,7 +117,7 @@ namespace Api.Application.Controllers
             }
         }
 
-        // [ApiExplorerSettings(IgnoreApi = true)]
+        [ApiExplorerSettings(IgnoreApi = true)]
         [Authorize("Bearer")]
         [HttpPatch("changepassword")]
         public async Task<ActionResult> ChangePassword([FromBody] UserChangePassword user)
