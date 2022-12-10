@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Api.Domain.Dtos.User;
 using Domain.Dtos.User;
 
 namespace Api.Domain.Interfaces.Services.User
@@ -12,5 +13,6 @@ namespace Api.Domain.Interfaces.Services.User
         Task<UserDtoCreateResult> Post(UserDtoCreate user);
         Task<UserDtoUpdateResult> Put(UserDtoUpdate user);
         Task<bool> Delete(Guid id);
+        Task<object> ChangePassword(UserChangePassword user);
     }
 }

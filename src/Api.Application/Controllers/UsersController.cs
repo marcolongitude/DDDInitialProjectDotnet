@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
+using Api.Domain.Dtos.User;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
 using Domain.Dtos.User;
@@ -109,6 +110,23 @@ namespace Api.Application.Controllers
             try
             {
                 return Ok(await _service.Delete(id));
+            }
+            catch (ArgumentException e)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [ApiExplorerSettings(IgnoreApi = true)]
+        [Authorize("Bearer")]
+        [HttpPatch("changepassword")]
+        public async Task<ActionResult> ChangePassword([FromBody] UserChangePassword user)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            try
+            {
+                return Ok(await _service.ChangePassword(user));
             }
             catch (ArgumentException e)
             {
